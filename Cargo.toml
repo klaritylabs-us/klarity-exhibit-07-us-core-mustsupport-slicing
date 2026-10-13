@@ -1,0 +1,19 @@
+[package]
+name = "klarity-exhibit-07-us-core-mustsupport-slicing"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "US Core Must Support and identifier slicing checks for FHIR R4"
+publish = false
+
+[lib]
+name = "us_core_mustsupport"
+path = "src/lib.rs"
+
+[[bin]]
+name = "validate-us-core-resource"
+path = "src/bin/validate_us_core_resource.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
